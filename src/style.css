@@ -14,6 +14,19 @@ body {
 
 nav {
   border: 1px solid black;
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+#logo {
+  align-self: center;
+}
+
+nav img {
+  height: 40px;
+  width: auto;
+  align-self: center;
 }
 
 nav ul {
