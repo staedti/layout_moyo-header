@@ -13,13 +13,12 @@ body {
 }
 
 nav {
-  border: 1px solid black;
   display: flex;
   justify-items: center;
   justify-content: space-around;
 }
 
-#logo {
+.logo {
   align-self: center;
 }
 
@@ -44,6 +43,10 @@ li {
 a {
   text-decoration: none;
   color: unset;
+}
+
+nav li:active {
+  border-bottom: 2px solid var(--mate-blue);
 }
 
 li a:hover {
