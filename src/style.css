@@ -9,12 +9,15 @@ body {
   font-style: normal;
   font-variation-settings: 'wdth' 100;
   margin: 0;
+  font-size: 12px;
 }
 
 nav {
   display: flex;
   justify-items: center;
   justify-content: space-around;
+  border: 1px solid black;
+  height: 60px;
 }
 
 .logo {
@@ -30,13 +33,12 @@ nav img {
 nav ul {
   list-style-type: none;
   display: flex;
-  justify-items: center;
-  justify-content: space-evenly;
 }
 
 li {
   text-transform: uppercase;
-  padding: 16px 8px;
+  align-content: center;
+  padding: 8px;
 }
 
 a {
@@ -50,4 +52,16 @@ nav li:active {
 
 li a:hover {
   color: var(--mate-blue);
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    max-width: 1024px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  nav {
+    max-width: 1200px;
+  }
 }
